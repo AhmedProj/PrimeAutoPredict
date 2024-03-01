@@ -9,6 +9,9 @@ pricing dataset, for 2011. The formula we'll be using for premium computation: c
 To achieve this, we'll develop four models:
 
 1- Model for material cost estimation.
+
 2- Model for bodily injury cost estimation.
+
 3- Model for material incident frequency prediction.
+
 4- Model for bodily injury occurrence frequency prediction.
