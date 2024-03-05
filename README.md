@@ -36,7 +36,7 @@ $ pip install sklearn
 $ pip install seaborn
 # Installer la bibliothèque numpy
 $ pip install numpy
-
+```
 ## Dossiers
 
 1. **Dataset**
