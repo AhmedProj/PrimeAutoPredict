@@ -39,12 +39,14 @@ $ pip install numpy
 ```
 ## Dossiers
 
-1. **Dataset**
+1. **Creation_Dataset**
    - `nomdufichier.csv`: fichier csv contenant nos données
+     
 2. **Data_Exploration**
-  - `nomdufihcier.ipynb` : Notebook pour l'exploration des données.
-  -`nomdufihcier.ipynb` :  Notebook pour les analyses statistiques des données.
+   - `nomdufihcier.ipynb` : Notebook pour l'exploration des données.
+   - `nomdufihcier.ipynb` :  Notebook pour les analyses statistiques des données.
+
 3. **Data_Preprocessing**
-   -`nomdufihcier.ipynb`: Notebook pour le prétraitement des données.
+   - `nomdufihcier.ipynb`: Notebook pour le prétraitement des données.
 
 ## Contributors
