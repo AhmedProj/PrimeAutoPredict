@@ -25,17 +25,8 @@ La présence de [Python](https://www.python.org/) sur la machine est requise.
 Après avoir cloné ce projet, vous devez exécuter les commandes suivantes :
 
 ```bash
-
-# Installer la bibliothèque pandas
-$ pip install pandas
-# Installer la bibliothèque matplotlib
-$ pip install matplotlib
-# Installer la bibliothèque sklearn
-$ pip install sklearn
-# Installer la bibliothèque seaborn
-$ pip install seaborn
-# Installer la bibliothèque numpy
-$ pip install numpy
+$ cd PrimeAutoPredict
+$ pip install -r requirements.txt
 ```
 ## Dossiers
 
