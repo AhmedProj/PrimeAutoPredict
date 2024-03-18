@@ -13,6 +13,8 @@ from torchvision import transforms, models
 from torch.utils.data import DataLoader
 from torch import optim
 
+
+
 transformation_train = transforms.Compose([
     transforms.Resize(size=(240, 180), antialias=True),
     transforms.RandomHorizontalFlip(p=0.5),
@@ -51,7 +53,7 @@ def collate_fn(examples):
 
 
 def train(model, tensor_data, optimizer, criteria, epoch, device='cpu'):
-
+ 
     loss_values = []
     for image, label in tensor_data:
         image = image.to(device)
@@ -112,10 +114,19 @@ class ModelCars(nn.Module):
         self.model = model
         self.transform = transformation
         self.device = device
+        model = model.to(device)
 
     def forward(self, x):
         x = self.transform(x)
         x_shape = x.shape
-        x = torch.reshape(x, (1,*x_shape)).to(self.device)
+        x = torch.reshape(x, (1,*x_shape)).to('cpu')
         x = self.model(x)
-        return F.softmax(x)    
+        return F.softmax(x)   
+
+def predict(img):
+    img = PIL.Image.open(img)
+    model = torch.load('modelo.pth', map_location='cpu')
+    model.eval()
+    probs_test = model(img)
+    probs_test = probs_test.detach().cpu()
+    return np.argmax(probs_test).item()
