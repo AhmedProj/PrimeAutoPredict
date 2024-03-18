@@ -28,6 +28,14 @@ Après avoir cloné ce projet, vous devez exécuter les commandes suivantes :
 $ cd PrimeAutoPredict
 $ pip install -r requirements.txt
 ```
+
+### Image Docker
+
+En se plaçanat dans le dossier Application, vous pouvez créer l'image docker de notre application et lancer un conteneur par la suite pour pouvoir visualiser le site via le port 8501.
+```bash
+$ docker build -t application .   
+$ docker run --name site -d -p 8501:8501 application
+```
 ## Dossiers
      
 1. **Data_Exploration**
