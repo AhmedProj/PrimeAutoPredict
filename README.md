@@ -22,11 +22,16 @@ La présence de [Python](https://www.python.org/) sur la machine est requise.
 
 ## Configuration de l'Environnement
 
-Après avoir cloné ce projet, vous devez exécuter les commandes suivantes :
+Après avoir cloné ce projet  vous devez exécuter les commandes suivantes pour pouvoir tester les notebooks:
 
 ```bash
 $ cd PrimeAutoPredict
 $ pip install -r requirements.txt
+```
+ET pour visuliser l'interface graphique crée :
+```bash
+$ cd Application
+$ streamlit run appli.py
 ```
 
 ### Image Docker
