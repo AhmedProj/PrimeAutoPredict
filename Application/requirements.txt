@@ -1,0 +1,9 @@
+scikit-learn
+pillow
+torch
+torchvision
+streamlit
+datasets
+joblib
+matplotlib
+seaborn
