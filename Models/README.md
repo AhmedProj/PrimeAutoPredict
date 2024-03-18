@@ -1,1 +1,1 @@
-
+Ce dossier contient cinq notebooks : un pour prédire la fréquence des sinistres corporels, un pour la fréquence des sinistres matériels, un autre pour le coût des sinistres matériels, un quatrième pour le coût des sinistres corporels, et enfin, un code final qui consolide l'ensemble. Ce dernier sélectionne le meilleur modèle de chaque notebook et calcule la prime prédite, qui est le produit du coût et de la fréquence.
