@@ -20,10 +20,10 @@ jobs:
           pip install pylint
       - name: Lint
         run: |
-          pylint appli.py CaptureDegats.py model_functions.py PredictAuto.py --fail-under=6
+          pylint Application/appli.py Application/CaptureDegats.py Application/model_functions.py Application/PredictAuto.py --fail-under=6
       - name: Test Python code
         run: |
-          python appli.py
+          python Application/appli.py
   build:
       runs-on: ubuntu-latest
   
