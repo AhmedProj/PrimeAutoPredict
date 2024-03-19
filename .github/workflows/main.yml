@@ -47,8 +47,6 @@ jobs:
         - name: Build Docker image
           run: |
             docker build -t ahmed577/githubaction:${{ steps.set_build_number.outputs.BUILD_NUMBER }} ./Application
-          with:
-            context: ./Application
             
         - name: Push Docker image to Docker Hub
           run: |
