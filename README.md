@@ -80,8 +80,8 @@ $ docker run --name site -d -p 8501:8501 application
      
 ## Contributors
 
--Boughanja Yosra
--Bitton Yona
--Haddad Nesrine
--Ouassou Ahmed
--Solis Lerma Daniel
+- Boughanja Yosra
+- Bitton Yona
+- Haddad Nesrine
+- Ouassou Ahmed
+- Solis Lerma Daniel
