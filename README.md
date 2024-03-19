@@ -65,7 +65,7 @@ $ docker run --name site -d -p 8501:8501 application
    - `Prime_Modeling.ipynb`: Notebook final pour calculer la prime à prédire.
      
 7. **CNN**
-   - `nomdufichier.ipynb`: Notebook pour ...
+   - `cnn-insurance.ipynb`: Notebook pour entrainer un model CNN pour prédire le niveaux de dommage dans images de voiture
 
 8. **csv**
    - `training.csv`: Dataset.
