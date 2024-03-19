@@ -1,21 +1,25 @@
 # PrimeAutoPredict
 
-Project devoted to the developement of a deep learning model to predict the total claims payments by the insurance company. The project includes as well its deployment for production.
+Projet dédié au développement d'un modèle Machine Learning pour prédire le total des paiements de sinistres par la compagnie d'assurance. Le projet comprend également son déploiement pour la production.
 
+L'objectif premier était de calculer une prime annuelle tiers (matériels + dommages corporels) pour les 36 311 contrats du jeu de données de tarification, pour 2011.
 
-The goal is to compute a yearly third party premium (material + bodily injury) for the 36,311 contracts of the
-pricing dataset, for 2011.
+Cependant nous nous concentrerons plutôt sur la prédiction la Prime Annuelle Materielle
 
 ## Démarche
-To achieve this, we'll develop four models:
+Pour y parvenir, nous développerons quatre modèles :
 
-1- Model for material cost estimation.
+1- Modèle pour l'estimation du coût matériel.
 
-2- Model for bodily injury cost estimation.
+2- Modèle pour l'estimation du coût des dommages corporels.
 
-3- Model for material incident frequency prediction.
+3- Modèle pour la prédiction de la fréquence des incidents matériels.
 
-4- Model for bodily injury occurrence frequency prediction.
+4- Modèle pour la prédiction de la fréquence des occurrences de dommages corporels.
+
+
+Puis nous calculons la Prime predite  = Fréquence predite * Coût moyen​ predit ​
+
 
 ## Prérequis
 La présence de [Python](https://www.python.org/) sur la machine est requise.
@@ -42,35 +46,42 @@ $ docker build -t application .
 $ docker run --name site -d -p 8501:8501 application
 ```
 ## Dossiers
-     
-1. **Data_Exploration**
-   - `Data_Exploration.ipynb` : Notebook pour l'exploration des données.
-   - `Statistical_Analysis.ipynb` :  Notebook pour les analyses statistiques des données.
-     
-2. **Data_Preprocessing**
-   - `Data_Preprocessing.ipynb` : Notebook pour le prétraitement des données.
 
-3. **Recherche_modeles**
-   - `README.md`: explication du dossier
-   - `Frequence_Corporelle_classification.ipynb`: Notebook pour prédire la fréquence corporelle.
-   - `Frequence_Materielle_classification.ipynb`: Notebook pour prédire la fréquence materielle.
-
-5. **Models**
-   - `Frequence_Corporelle.ipynb`: Notebook pour prédire la fréquence corporelle.
-   - `Frequence_Materielle.ipynb`: Notebook pour prédire la fréquence materielle.
-   - `Cout_Corporel.ipynb`: Notebook pour prédire le cout corporelle.
-   - `Cout_Materiel.ipynb`: Notebook pour prédire le cout materielle.
-
-6. **Prediction_Calcul_Prime**
-   - `Prime_Modeling.ipynb`: Notebook final pour calculer la prime à prédire.
+1. **Application**
+   - Dossier permettant de déployer notre solution 
      
-7. **CNN**
+2. **CNN**
    - `cnn-insurance.ipynb`: Notebook pour entrainer un model CNN pour prédire le niveaux de dommage dans images de voiture
+   - `model_functions.py`: fonctions utilisées pour faire marcher CNN
+   - `test-destructed.jpg`: image hors dataset pour tester le model
+     
+3. **Notebooks**
 
-8. **csv**
+ * **Data_Exploration**
+      - `Statistiques_Initiales.ipynb`: Notebook pour les analyses statistiques des données.
+ * **Data Preprocessing**
+   - `Data_preprocessing.ipynb` : Notebook pour le prétraitement des données.
+   - `Etude_Frequence_corporels.ipynb` : Notebook pour l'étude de la fréquence des dommages corporels.
+   - `Etude_Frequence_materiel.ipynb` : Notebook pour l'étude de la fréquence des incidents matériels.
+   - `Predicting_bodily_claims_costs.ipynb` : Notebook pour prédire les coûts des dommages corporels.
+   - `Predicting_material_claims_costs.ipynb` : Notebook pour prédire les coûts matériels.
+
+4. **Models**
+   - `model_couts_corporels.joblib`: Notebook pour prédire le cout corporelle sous format Joblib pour mise en production.
+   - `model_couts_materiels.joblib`: .Notebook pour prédire le cout materielle sous format Joblib pour mise en production.
+   - `model_frequence_corporel.joblib`:Notebook pour prédire la fréquence corporelle sous format Joblib pour mise en production.
+   - `model_frequence_materiell.joblib`: Notebook pour prédire la fréquence materielle sous format Joblib pour mise en production.
+   - `Code_final_prime.ipynb`: Ce notebook réunit nos meilleurs models permet de calculer la prime prime annuelle à prédire destinée à couvrir les dommages matériel
+
+
+5. **data**
    - `training.csv`: Dataset.
-   - `training_clean.csv`: Dataset noettoyé.
-   -  `pricing.csv`
+   - `training_clean.csv`: Dataset nettoyé.
      
 ## Contributors
 
+*Boughanja Yosra
+*Bitton Yona
+*Haddad Nesrine
+*Ouassou Ahmed
+*Solis Lerma Daniel
