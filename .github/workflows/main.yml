@@ -32,7 +32,8 @@ jobs:
       steps:
         - name: Checkout repository
           uses: actions/checkout@v4
-  
+          
+        - run: git lfs pull
         - name: Set build number
           id: set_build_number
           run: echo "::set-output name=BUILD_NUMBER::${GITHUB_RUN_NUMBER}"
@@ -46,10 +47,13 @@ jobs:
         - name: Build Docker image
           run: |
             docker build -t ahmed577/githubaction:${{ steps.set_build_number.outputs.BUILD_NUMBER }} ./Application
-       
+          with:
+            context: ./Application
+            
         - name: Push Docker image to Docker Hub
           run: |
             docker push ahmed577/githubaction:${{ steps.set_build_number.outputs.BUILD_NUMBER }}
+ 
 
   deploy:
       name: Deploy Docker Image
