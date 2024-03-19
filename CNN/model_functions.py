@@ -12,7 +12,9 @@ from torchvision.transforms.functional import pil_to_tensor, to_tensor
 from torchvision import transforms, models
 from torch.utils.data import DataLoader
 from torch import optim
+import os
 
+dirname = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 transformation_train = transforms.Compose([
@@ -125,7 +127,7 @@ class ModelCars(nn.Module):
 
 def predict(img):
     img = PIL.Image.open(img)
-    model = torch.load('modelo.pth', map_location='cpu')
+    model = torch.load(dirname + r'\Application\modelo.pth', map_location='cpu')
     model.eval()
     probs_test = model(img)
     probs_test = probs_test.detach().cpu()
