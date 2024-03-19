@@ -15,7 +15,7 @@ def upload_predict_page():
     st.header("**Et** on évaluera les dégâts de votre véhicule")
 
     uploaded_file = st.file_uploader(
-        "Choisissez une image à uploader", type=["jpg", "jpeg", "png", "gif", "bmp"]
+        "Choisissez une image à uploader", type=["jpg"]
     )
     if uploaded_file is not None:
         image = load_image(uploaded_file)
