@@ -4,6 +4,6 @@ of three classes:
 	
 0 - minor
 
-1 – moderate​
+1 - moderate​
 
 2 - severe
