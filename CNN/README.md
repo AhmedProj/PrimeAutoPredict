@@ -3,5 +3,7 @@ We used the Abhijit85/InsuranceClaimImages dataset from Huggin Face which is com
 of three classes:
 	
 0 - minor
+
 1 – moderate​
+
 2 - severe
