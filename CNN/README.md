@@ -1,6 +1,5 @@
-We fine-tuned the VGG-19 CNN in order to classify the level of damage from a given car image.
-We used the Abhijit85/InsuranceClaimImages dataset from Huggin Face which is composed 
-of three classes:
+Nous avons affiné le CNN VGG-19 afin de classer le niveau de dommages d'un voiture à partir des images.
+Nous avons utilisé le dataset Abhijit85/InsuranceClaimImages de Hugging Face, qui se compose de trois classes suivantes :
 	
 0 - minor
 
