@@ -71,17 +71,19 @@ Le site est alors disponible sur le port 8501.
       - `Statistiques_Initiales.ipynb`: Notebook pour les analyses statistiques des données.
  * **Data Preprocessing**
    - `Data_preprocessing.ipynb` : Notebook pour le prétraitement des données.
-   - `Etude_Frequence_corporels.ipynb` : Notebook pour l'étude de la fréquence des dommages corporels.
-   - `Etude_Frequence_materiel.ipynb` : Notebook pour l'étude de la fréquence des incidents matériels.
-   - `Predicting_bodily_claims_costs.ipynb` : Notebook pour prédire les coûts des dommages corporels.
-   - `Predicting_material_claims_costs.ipynb` : Notebook pour prédire les coûts matériels.
+   - `Etude_Frequence_corporels.ipynb` : Notebook pour prédire la fréquence des sinistres corporels.
+   - `Etude_Frequence_materiel.ipynb` : Notebook pour prédire la fréquence des sinistres matériels.
+   - `Predicting_bodily_claims_costs.ipynb` : Notebook pour prédire les coûts des sinistres corporels.
+   - `Predicting_material_claims_costs.ipynb` : Notebook pour prédire les coûts des sinistres matériels.
+   - `Predicting_premium_of_bodily_claims.ipynb` : Notebook pour prédire la prime annuelle destinée à couvrir les dommages corporels.
+   - `Predicting_premium_of_material_claims.ipynb` : Notebook pour prédire la prime annuelle destinée à couvrir les dommages matériels.
 
 4. **Models**
-   - `model_couts_corporels.joblib`: Notebook pour prédire le cout corporelle sous format Joblib pour mise en production.
-   - `model_couts_materiels.joblib`: .Notebook pour prédire le cout materielle sous format Joblib pour mise en production.
-   - `model_frequence_corporel.joblib`:Notebook pour prédire la fréquence corporelle sous format Joblib pour mise en production.
-   - `model_frequence_materiell.joblib`: Notebook pour prédire la fréquence materielle sous format Joblib pour mise en production.
-   - `Code_final_prime.ipynb`: Ce notebook réunit nos meilleurs models permet de calculer la prime prime annuelle à prédire destinée à couvrir les dommages matériel
+   - `model_couts_corporels.joblib`: Notebook pour prédire les coûts des sinistres corporels sous format Joblib pour mise en production.
+   - `model_couts_materiels.joblib`: .Notebook pour prédire les coûts des sinistres matériels sous format Joblib pour mise en production.
+   - `model_frequence_corporel.joblib`:Notebook pour prédire la fréquence des sinistres corporels sous format Joblib pour mise en production.
+   - `model_frequence_materiell.joblib`: Notebook pour prédire la fréquence des sinistres matériels sous format Joblib pour mise en production.
+   - `Code_final_premium computation.ipynb`: Ce notebook réunit nos meilleurs models permet de calculer la prime prime annuelle à prédire destinée à couvrir les dommages matériel
 
 
 5. **data**
